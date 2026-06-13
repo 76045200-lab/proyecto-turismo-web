@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivencial Luxe - Turismo de Lujo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <span class="marca">Vivencial Luxe</span>
+        <ul class="menu">
+            <li>Destinos</li>
+            <li>Paquetes</li>
+            <li>Reservar</li>
+        </ul>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <header class="hero-banner">
+        <div class="hero-contenido">
+            <span class="hero-etiqueta">✦ Experiencias Premium 2025</span>
+            <h1>Turismo Vivencial<br>de Lujo & Moda Sostenible</h1>
+            <p>Descubre los destinos más exclusivos del Perú con itinerarios personalizados, alojamiento 5 estrellas y
+                acceso a eventos de moda artesanal.</p>
+            <a href="#reservas" class="hero-boton">Reservar ahora</a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN 1: GALERÍA DE DESTINOS -->
+    <section class="galeria">
+        <h2>Destinos Destacados</h2>
+        <p class="subtitulo">Experiencias únicas en el Perú profundo</p>
+
+        <div class="grid-destinos">
+
+            <!-- Tarjeta 1 -->
+            <figure class="tarjeta-destino">
+                <picture>
+                    <source media="(min-width: 1024px)"
+                        srcset="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800">
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=500">
+                    <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=400"
+                        alt="Vista panorámica de la ciudadela de Machu Picchu al amanecer" class="imagen-destino">
+                </picture>
+                <figcaption class="leyenda">
+                    <h4>Machu Picchu</h4>
+                    <p>Experiencia mística premium con guías arqueológicos especializados.</p>
+                </figcaption>
+            </figure>
+
+            <!-- Tarjeta 2 -->
+
+            <figure class="tarjeta-destino">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="imagenes/photo-1553550765-41e7dff2bd41.avif">
+                    <source media="(min-width: 768px)" srcset="imagenes/photo-1553550765-41e7dff2bd41.avif">
+                    <img src="imagenes/photo-1553550765-41e7dff2bd41.avif"
+                        alt="Islas flotantes de los Uros en el Lago Titicaca" class="imagen-destino">
+                </picture>
+                <figcaption class="leyenda">
+                    <h4>Lago Titicaca</h4>
+                    <p>Cultura viva con las comunidades ancestrales de las islas Uros.</p>
+                </figcaption>
+            </figure>
+            <!-- Tarjeta 3 -->
+
+            <figure class="tarjeta-destino">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="imagenes/plaza-de-armas-cusco-night-1140x530.png">
+                    <source media="(min-width: 768px)" srcset="imagenes/plaza-de-armas-cusco-night-1140x530.png">
+                    <img src="imagenes/plaza-de-armas-cusco-night-1140x530.png"
+                        alt="Plaza principal del Cusco colonial con arquitectura inca y española"
+                        class="imagen-destino">
+                </picture>
+                <figcaption class="leyenda">
+                    <h4>Cusco Colonial</h4>
+                    <p>Ciudad imperial con moda artesanal y gastronomía de autor.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: TABLA DE PAQUETES -->
+    <section class="paquetes">
+        <h2>Paquetes VIP</h2>
+        <p class="subtitulo">Compara y elige tu experiencia ideal</p>
+
+        <table>
+            <caption>Comparativa de paquetes turísticos de lujo 2025</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Paquete</th>
+                    <th scope="col">Destinos incluidos</th>
+                    <th scope="col">Alojamiento</th>
+                    <th scope="col">Acceso a eventos de moda</th>
+                    <th scope="col">Costo base</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gold</td>
+                    <td>Machu Picchu</td>
+                    <td>★★★★</td>
+                    <td>2 eventos</td>
+                    <td>$1,200</td>
+                </tr>
+                <tr>
+                    <td>Platinum</td>
+                    <td>Cusco + Titicaca</td>
+                    <td>★★★★★</td>
+                    <td>4 eventos</td>
+                    <td>$2,800</td>
+                </tr>
+                <tr>
+                    <td>Diamond</td>
+                    <td>Circuito completo</td>
+                    <td>★★★★★</td>
+                    <td>Ilimitados</td>
+                    <td>$4,500</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- SECCIÓN 3: FORMULARIO DE RESERVA -->
+    <section class="reservas">
+        <h2>Reserva tu Experiencia</h2>
+        <p class="subtitulo">Personaliza tu itinerario de lujo</p>
+
+        <form class="formulario" action="#" method="post">
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" minlength="5" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" pattern="[+0-9\s]{7,15}"
+                required>
+
+            <label for="fecha">Fecha estimada de viaje</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="destino">Destino preferido</label>
+            <select id="destino" name="destino" required>
+                <option value="">Selecciona un destino...</option>
+                <option value="machupicchu">Machu Picchu – Gold</option>
+                <option value="titicaca">Lago Titicaca – Platinum</option>
+                <option value="circuito">Circuito completo – Diamond</option>
+            </select>
+
+            <label for="presupuesto">
+                Presupuesto máximo: <strong id="valor-slider">$2,000 USD</strong>
+            </label>
+            <input type="range" id="presupuesto" name="presupuesto" min="500" max="5000" step="100" value="2000"
+                oninput="document.getElementById('valor-slider').textContent = '$' + Number(this.value).toLocaleString() + ' USD'">
+
+            <button type="submit">Solicitar itinerario personalizado</button>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
